@@ -12,5 +12,5 @@ puts first_item #milk
 puts "---"
 puts grocery_list
 puts "---"
-ice_cream_bread = Array.drop(2)
+eggs_bread = grocery_list.drop(2)
 puts grocery_list
