@@ -98,3 +98,28 @@ class Person
   end
 end
 ```
+* The new things when defining parse on Person to make it a class method rather than a instance method which is why we directly call the method directly Person the capital indicating the class
+
+# Inheritance 
+* When defining a new class you can chose to inherit all the power to the parent class
+```ruby
+class Instructor < Person
+    attr_accessor :role
+end
+
+class Student < Person
+    attr_accessor :grade
+end
+```
+* Instructors and students can do everything people can do and a bit more
+* Creating the first individual instance of the Instructor class and the student class
+```ruby 
+person1 = Instructor.new
+person1.first_name = "Raghu"
+person1.last_name = "Betina"
+person1.role = "Lecturer"
+
+person2 = Student.new
+person2.first_name = "Dustin"
+person2.last_name = "Doyle"
+person2.grade = "A"
