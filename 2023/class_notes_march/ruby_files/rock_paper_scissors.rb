@@ -4,6 +4,11 @@ user_input = gets.chomp
 a = "rock paper scissors".split.sample
 p "Computer played #{a}"
 
+comp_rock_outcomes = {
+  "rock": "tied",
+  "paper": 
+}
+
 if ((user_input == "rock" && a == "paper") ||
   (user_input == "scissors" && a == "rock") ||
   (user_input == "paper" && a == "scissors"))
